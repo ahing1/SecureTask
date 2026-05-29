@@ -1,8 +1,8 @@
 CREATE TABLE users (
-   id SERIAL PRIMARY KEY,
+   id BIGSERIAL PRIMARY KEY,
    username VARCHAR(100) UNIQUE NOT NULL,
    password VARCHAR(255) NOT NULL,
    role VARCHAR(50) NOT NULL,
-   organization_id INT REFERENCES organizations(id) NOT NULL,
+   organization_id BIGINT REFERENCES organizations(id) NOT NULL,
    created_at TIMESTAMP DEFAULT NOW()
 );

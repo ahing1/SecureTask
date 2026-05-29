@@ -1,5 +1,5 @@
 CREATE TABLE organizations (
-   id SERIAL PRIMARY KEY,
+   id BIGSERIAL PRIMARY KEY,
    name VARCHAR(100) UNIQUE NOT NULL,
    created_at TIMESTAMP DEFAULT NOW()
 );
