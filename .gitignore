@@ -41,6 +41,7 @@ build/
 ### Secrets / local config — NEVER commit these ###
 *.env
 .env
+src/main/resources/application.properties
 application-local.properties
 application-local.yml
 application-secret*.properties
