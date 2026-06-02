@@ -1,5 +1,6 @@
 package com.andrew.securetaskpro.dto;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class TaskResponse {
@@ -9,13 +10,13 @@ public class TaskResponse {
     private String description;
     private String status;
     private String priority;
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
     private Long creatorId;
     private Long assigneeId;
     private Long organizationId;
     private LocalDateTime createdAt;
 
-    public TaskResponse(Long id, String title, String description, String status, String priority, LocalDateTime dueDate, Long creatorId, Long assigneeId, Long organizationId, LocalDateTime createdAt) {
+    public TaskResponse(Long id, String title, String description, String status, String priority, LocalDate dueDate, Long creatorId, Long assigneeId, Long organizationId, LocalDateTime createdAt) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -48,7 +49,7 @@ public class TaskResponse {
         return priority;
     }
 
-    public LocalDateTime getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
